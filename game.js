@@ -644,13 +644,13 @@ function drawBackground() {
 function drawUI() {
     // Score display
     ctx.fillStyle = COLORS.score;
-    ctx.font = '48px monospace';
+    ctx.font = '48px "Pixel Font", monospace';
     ctx.textAlign = 'left';
     ctx.fillText(`Score: ${gameState.score}`, 50, 80);
     
     if (gameState.score >= WIN_SCORE - 10 && gameState.score < WIN_SCORE) {
         ctx.fillStyle = COLORS.player;
-        ctx.font = '32px monospace';
+        ctx.font = '32px "Pixel Font", monospace';
         ctx.fillText(`${WIN_SCORE - gameState.score} more to win!`, 50, 140);
     }
 }
